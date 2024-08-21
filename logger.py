@@ -5,12 +5,14 @@ logger = logging.getLogger('my_logger')
 logger.setLevel(logging.DEBUG)  # 로그 레벨 설정 (DEBUG, INFO, WARNING, ERROR, CRITICAL)
 
 # 콘솔 핸들러 설정
+# console에는 DEBUG부터 출력됨
 console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.DEBUG)
 
 # 파일 핸들러 설정 (파일에 로그 기록)
+# file에는 WARNING부터 출력됨
 file_handler = logging.FileHandler('my_log.log')
-file_handler.setLevel(logging.INFO)
+file_handler.setLevel(logging.WARNING)
 
 # 포맷터 설정
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -22,7 +24,6 @@ logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
 # 로그 메시지 출력
-logger.debug('')
 logger.debug('This is a debug message')
 logger.info('This is an info message')
 logger.warning('This is a warning message')
