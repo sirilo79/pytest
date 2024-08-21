@@ -32,3 +32,4 @@ logger.critical('This is a critical message')
 # 핸들러 제거 (필요시)
 logger.removeHandler(console_handler)
 logger.removeHandler(file_handler)
+
