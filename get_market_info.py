@@ -8,4 +8,4 @@ data = res.json()
 
 print(data)
 print("------------------------------")
-print(f"Response : {res}")
+print(f"Response Code : {res}")
