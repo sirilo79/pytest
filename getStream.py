@@ -1,5 +1,9 @@
-print("hello getStream")
+import requests
 
+url = "https://api.upbit.com/v1/market/all?isDetails=true"
 
-print("hello 2")
-print("hello 3")
+headers = {"accept": "application/json"}
+res = requests.get(url, headers=headers)
+data = res.json()
+
+print(data)
