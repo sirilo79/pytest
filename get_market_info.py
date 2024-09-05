@@ -7,3 +7,5 @@ res = requests.get(url, headers=headers)
 data = res.json()
 
 print(data)
+print("------------------------------")
+print(f"Response : {res}")
