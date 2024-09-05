@@ -9,3 +9,6 @@
 2024-08-21 23:47:53,536 - my_logger - WARNING - This is a warning message
 2024-08-21 23:47:53,536 - my_logger - ERROR - This is an error message
 2024-08-21 23:47:53,538 - my_logger - CRITICAL - This is a critical message
+2024-09-05 20:11:52,068 - my_logger - WARNING - This is a warning message
+2024-09-05 20:11:52,068 - my_logger - ERROR - This is an error message
+2024-09-05 20:11:52,069 - my_logger - CRITICAL - This is a critical message
