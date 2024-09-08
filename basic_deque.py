@@ -23,7 +23,4 @@ for i in range(10):
     print("deq2 :", deq2)
     
 print("output : ", deq2[3],deq2[2],deq2[1])
-
-
-
-
+print("length : ", len(deq2))
