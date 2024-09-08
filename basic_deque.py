@@ -1,26 +1,28 @@
 from collections import deque
 
-deq = deque()
+deq1 = deque()
 
-deq.append(1)
-print(deq)
+for i in range(2):
+    deq1.append(i)
+    print("deq1 :", deq1)
 
-deq.append(2)
-print(deq)
+for i in range(3,6):
+    deq1.appendleft(i)
+    print("deq1 :", deq1) 
 
-deq.appendleft(3)
-print(deq)
+deq1.pop()
+print("deq1 :", deq1)
+deq1.popleft()
+print("deq1 :", deq1)
+print("======================================================")
 
-deq.appendleft(4)
-print(deq)
+deq2  = deque(maxlen=100)
 
-deq.pop()
-print(deq)
-
-deq.popleft()
-print(deq)
-
-
+for i in range(10):
+    deq2.append(i)    
+    print("deq2 :", deq2)
+    
+print("output : ", deq2[3],deq2[2],deq2[1])
 
 
 

@@ -1,4 +1,4 @@
-class CircularBuffer(object):
+class RingBuffer(object):
 
     def __init__(self, max_size=10):
         """max_size 미설정 시 default 10"""
@@ -39,12 +39,12 @@ class CircularBuffer(object):
         return item
 
 
-cb = CircularBuffer(15)
+rb = RingBuffer(15)
 for i in range(0, 20) :
     i += 1
-    cb.enqueue(i)
-    print("Buffer: " + str(cb))
-    print(f"count: {cb.count()}")
+    rb.enqueue(i)
+    print("Buffer: " + str(rb))
+    print(f"count: {rb.count()}")
     
-print("is Empty: {}".format(cb.is_empty()))
-print("is Full: {}".format(cb.is_full()))
+print("is Empty: {}".format(rb.is_empty()))
+print("is Full: {}".format(rb.is_full()))
