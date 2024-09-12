@@ -1,3 +1,5 @@
 # ignore log files
 *.log
-/venv/*
+
+# ignore venv directory
+venv/
