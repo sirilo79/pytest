@@ -19,4 +19,4 @@ else:
 print("a > b:", is_larger(a,b))    
 print("a == b:", is_same(a,b))
 print("a < b:", is_smaller(a,b))
-
+print("a < b:", is_smaller(a,b))
