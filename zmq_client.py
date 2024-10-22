@@ -8,7 +8,7 @@ socket = context.socket(zmq.REQ)
 socket.connect("tcp://localhost:5555")  # 서버에 연결
 
 # 서버에 메시지 전송
-message = "World"
+message = "World~!!!"
 print(f"Sending request: {message}")
 socket.send_string(message)
 

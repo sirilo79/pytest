@@ -7,7 +7,7 @@ context = zmq.Context()
 socket = context.socket(zmq.REP)
 socket.bind("tcp://*:5555")  # 모든 IP에서 5555 포트를 통해 수신
 
-print("Server started, waiting for messages...")
+print("Server started, waiting for messages.......")
 
 while True:
     # 클라이언트로부터 메시지 수신
