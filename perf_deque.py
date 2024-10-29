@@ -9,6 +9,4 @@ for i in range(50000):
 #    print(deq1)
 end_time = time.time()
 print(f"{end_time - start_time:.5f} sec")
-    
-
-
+  
